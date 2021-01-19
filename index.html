@@ -43,49 +43,64 @@
 
 
             </div>
-            <a href="index.html">
-                <div class="sidebarlink">
-                    <div class="sblinkicon">
-                        <img src="assets/images/home.svg" alt="">
+            <a href="#home">
+                <div class=" sidebarlink ">
+                    <div class="sblinkicon ">
+                        <img src="assets/images/home.svg " alt=" ">
                     </div>
-                    <div class="sblinktxt">
+                    <div class="sblinktxt ">
                         <p>Home</p>
                     </div>
-                    <div class="sblinknav">
-                        <img src="assets/images/navarrow.svg" alt="">
-                    </div>
+
                 </div>
             </a>
 
+            <a href="#photogallery ">
+                <div class="sidebarlink ">
+                    <div class="sblinkicon ">
+                        <img src="assets/images/home.svg " alt=" ">
+                    </div>
+                    <div class="sblinktxt ">
+                        <p>Photo Gallery</p>
+                    </div>
 
-
-            <a href="garages.html">
-                <div class="sidebarlink">
-                    <div class="sblinkicon">
-                        <img src="assets/images/garageicon.svg" alt="">
-                    </div>
-                    <div class="sblinktxt">
-                        <p>Nearby Places</p>
-                    </div>
-                    <div class="sblinknav">
-                        <img src="assets/images/navarrow.svg" alt="">
-                    </div>
                 </div>
             </a>
 
-
-
-            <a href="contactus.html">
-                <div class="sidebarlink">
-                    <div class="sblinkicon">
-                        <img src="assets/images/contactus.svg" alt="">
+            <a href="#contactus ">
+                <div class="sidebarlink ">
+                    <div class="sblinkicon ">
+                        <img src="assets/images/contactus.svg " alt=" ">
                     </div>
-                    <div class="sblinktxt">
+                    <div class="sblinktxt ">
                         <p>Contact Us</p>
                     </div>
-                    <div class="sblinknav">
-                        <img src="assets/images/navarrow.svg" alt="">
+
+                </div>
+            </a>
+
+
+            <a href="#nearbyplaces ">
+                <div class="sidebarlink ">
+                    <div class="sblinkicon ">
+                        <img src="assets/images/garageicon.svg " alt=" ">
                     </div>
+                    <div class="sblinktxt ">
+                        <p>Nearby Places</p>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="#seemaps">
+                <div class="sidebarlink ">
+                    <div class="sblinkicon ">
+                        <img src="assets/images/contactus.svg " alt=" ">
+                    </div>
+                    <div class="sblinktxt ">
+                        <p>Go To Map</p>
+                    </div>
+
                 </div>
             </a>
 
@@ -97,22 +112,28 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
 
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="">
+            <a class="navbar-brand " href="index.html ">
+                <img src="assets/images/logo.png " alt=" ">
             </a>
-            <img class="navbar-toggler togglerimg" src="assets/images/sidebartoggler.svg" alt="" onclick="sidebar_open()">
+            <img class="navbar-toggler togglerimg " src="assets/images/sidebartoggler.svg " alt=" " onclick="sidebar_open() ">
 
 
-            <div class="collapse navbar-collapse navLinks" id="navbarTogglerDemo03">
+            <div class="collapse navbar-collapse navLinks " id="navbarTogglerDemo03 ">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link " href="#home ">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="contactus.html" tabindex="-1" aria-disabled="true">Contact us</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#photogallery ">Photo Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="aboutus.html" tabindex="-1" aria-disabled="true">About us</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#contactus ">Contact us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#nearbyplaces ">Nearby Places</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#seemaps ">Go to Map</a>
                     </li>
 
                 </ul>
@@ -123,13 +144,39 @@
 
 
     </header>
+    <div class="vego-overlay " onclick="sidebar_close() " style="cursor:pointer " id="myOverlay "></div>
+    <div class="vego-overlay " onclick="addLocationsidebar_close() " style="cursor:pointer " id="myOverlay2 "></div>
 
 
+    <div id="home">
+        <div class="mainpic">
+            <img src="assets/css/bgpic.jpg" alt="">
 
-    <div class="vego-overlay" onclick="sidebar_close()" style="cursor:pointer" id="myOverlay"></div>
-    <div class="vego-overlay" onclick="addLocationsidebar_close()" style="cursor:pointer" id="myOverlay2"></div>
 
-    </section>
+        </div>
+        <div class="maintxt">
+            <h2>WELCOME</h2>
+            <h4>Ghrishneshwar Jyotirlinga, Ellora</h4>
+        </div>
+        <div class="mainbtn">
+            <button class="btn">Contact Now</button>
+        </div>
+
+
+    </div>
+    <div id="photogallery" style="height: 10rem;">
+
+    </div>
+    <div id="contactus" style="height: 10rem;">
+
+    </div>
+    <div id="nearbyplaces" style="height: 10rem;">
+
+    </div>
+    <div id="seemaps" style="height: 10rem;">
+
+    </div>
+
 
 
 
@@ -140,10 +187,10 @@
 
 
     <!-- Option 1: jQuery, Popper.js, and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    <script src="assets/js/site.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script>
+    <script src="assets/js/site.js "></script>
 </body>
 
 </html>
