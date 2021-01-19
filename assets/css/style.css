@@ -234,7 +234,7 @@ hr {
     .maintxt {
         width: 100%;
         position: absolute;
-        top: 10%;
+        top: 15%;
         text-align: center;
     }
     .maintxt h2 {
@@ -243,24 +243,24 @@ hr {
         font-size: 2rem;
         opacity: 1;
         margin-top: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     .maintxt h4 {
-        color: rgb(44, 44, 44);
-        font-weight: 650;
+        color: white;
+        font-weight: 600;
         font-size: 1.2rem;
         text-transform: uppercase;
+        letter-spacing: 1px;
     }
     .mainbtn {
         position: absolute;
-        margin-top: -9rem;
+        margin-top: -7rem;
         width: 100%;
         text-align: center;
     }
     .mainbtn button {
         background-color: #fd8b01;
         color: white;
-        font-size: 14px;
     }
 }
 
