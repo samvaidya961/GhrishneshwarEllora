@@ -112,9 +112,9 @@
                         padding-left: 0;
                         width: 90%;
                         padding: 0;
-                        top: 0.5rem;
+                        top: 1rem;
                         border-radius: 10px;
-                        height: auto;
+                        height: 21rem;
                     }
                     
                     .defaultcard {
@@ -206,50 +206,41 @@
                         header {
                             background: white;
                             box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
+                            background-color: rgb(43, 43, 43);
+                            position: sticky;
+                            top: 0;
                         }
                         /* main site content */
-                        .mainpic {
+                        .mainhome {
+                            background-color: rgb(43, 43, 43);
+                            margin: 0px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            border-radius: 0px;
                             width: 100%;
-                        }
-                        .mainpic img {
-                            width: 100%;
-                        }
-                        .mainpic {
-                            width: 100vw;
-                            background-size: 100% 100%;
-                            background-repeat: no-repeat;
-                            position: relative;
-                            -webkit-filter: grayscale(80%);
-                            filter: grayscale(80%);
-                            -webkit-filter: blur(2px);
-                            filter: blur(80%);
-                            margin-top: 3px;
+                            padding: 1rem;
                         }
                         .maintxt {
                             width: 100%;
-                            position: absolute;
-                            top: 10%;
                             text-align: center;
                         }
                         .maintxt h2 {
-                            color: black;
+                            color: rgb(167, 167, 167);
                             font-weight: 650;
                             font-size: 2rem;
-                            opacity: 1;
-                            margin-top: 2rem;
                             margin-bottom: 3rem;
+                            padding-top: 1rem;
                         }
                         .maintxt h4 {
                             color: white;
-                            font-weight: 650;
                             font-size: 1.2rem;
                             text-transform: uppercase;
                         }
                         .mainbtn {
-                            position: absolute;
-                            margin-top: -4rem;
                             width: 100%;
                             text-align: center;
+                            margin-top: 2rem;
                         }
                         .mainbtn button {
                             background-color: #fd8b01;
@@ -280,7 +271,7 @@
                             box-shadow: 1px 1px 3px rgb(241, 241, 241);
                             border-radius: 5px;
                             margin-top: 3rem;
-                            background: lightblue;
+                            background: lightgrey;
                         }
                         .profile-pic {
                             margin-top: -2.7rem;
