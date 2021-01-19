@@ -1,0 +1,338 @@
+                html {
+                    -ms-text-size-adjust: 100%;
+                    -webkit-text-size-adjust: 100%
+                }
+                
+                body {
+                    margin: 0;
+                    background: rgb(245, 245, 245);
+                }
+                
+                html {
+                    box-sizing: border-box;
+                    overflow-x: hidden
+                }
+                
+                *,
+                *:before,
+                *:after {
+                    box-sizing: inherit
+                }
+                
+                html,
+                body {
+                    font-weight: 500;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                
+                a {
+                    color: inherit;
+                    /* blue colors for links too */
+                    text-decoration: inherit;
+                    /* no underline */
+                }
+                
+                a:hover {
+                    color: inherit;
+                    text-decoration: none;
+                }
+                
+                hr {
+                    margin: 0;
+                    padding: 0;
+                }
+                /* Hide all steps by default: */
+                
+                .tab {
+                    display: none;
+                }
+                
+                .vego-overlay {
+                    position: fixed;
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 1500;
+                }
+                
+                .vego-animate-left {
+                    position: relative;
+                    animation: animateleft 0.4s
+                }
+                
+                .vego-animate-bottom {
+                    position: relative;
+                    animation: animatebottom 0.4s
+                }
+                
+                @keyframes animatebottom {
+                    from {
+                        bottom: -300px;
+                        opacity: 0
+                    }
+                    to {
+                        bottom: 0;
+                        opacity: 1
+                    }
+                }
+                
+                @keyframes animateleft {
+                    from {
+                        left: -300px;
+                        opacity: 0
+                    }
+                    to {
+                        left: 0;
+                        opacity: 1
+                    }
+                }
+                /* sidebar */
+                
+                .vego-sidebar {
+                    width: 200px;
+                    background-color: #fff;
+                    position: fixed!important;
+                    z-index: 1;
+                    overflow: auto;
+                    bottom: 0;
+                    z-index: 2000 !important;
+                }
+                
+                .vego-bar-block {
+                    width: 100%;
+                    text-align: left;
+                    padding: 8px 16px;
+                    width: 100%;
+                    display: block;
+                    padding: 8px 16px;
+                    text-align: left;
+                    border: none;
+                    white-space: normal;
+                    float: none;
+                    outline: 0;
+                }
+                
+                #mySidebar {
+                    position: fixed;
+                    left: 0;
+                    height: 100%;
+                    z-index: 1000;
+                    padding: 20px;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    padding-right: 0;
+                    padding-left: 0;
+                    width: 100%;
+                    padding: 0;
+                }
+                
+                .defaultcard {
+                    background-color: white;
+                    width: 98%;
+                    margin-left: 1%;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    border-radius: 3px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
+                }
+                /* Extra small devices (phones, 0px to 550px) */
+                
+                @media only screen and (max-width: 550px) {
+                    .navbar-brand img {
+                        height: 2.2rem;
+                        width: auto;
+                        margin: 0px 0px 0px 0px;
+                    }
+                    .togglerimg {
+                        height: 1.7rem;
+                        border: none;
+                    }
+                    /* sidebar */
+                    .vego-sidebar {
+                        height: 35%;
+                    }
+                    .vego-bar-block {
+                        min-width: 85%;
+                    }
+                    .userprofile {
+                        height: 10rem;
+                        background: #209586;
+                    }
+                    .sidebarlink {
+                        display: flex;
+                        width: 100%;
+                        padding: 0.7rem;
+                        border-bottom: 1px solid lightgray;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                    .sblinkicon img {
+                        height: 1.3rem;
+                    }
+                    .sblinknav img {
+                        height: 0.5rem;
+                    }
+                    .sblinkicon {
+                        width: 10%;
+                    }
+                    .sblinktxt {
+                        width: 80%;
+                        padding-left: 0.5rem;
+                    }
+                    .sblinktxt p {
+                        font-size: 14px;
+                        margin-top: 3px;
+                        margin-bottom: 0;
+                        color: black;
+                    }
+                    .sblinktxt p:hover {
+                        font-weight: 550;
+                        color: #f0233e;
+                    }
+                    .sidebarlink:hover .sblinknav img {
+                        transform: rotate(90deg);
+                        transition: 0s;
+                    }
+                    .cutsidebar img {
+                        height: 1.2rem;
+                        float: right;
+                        margin: 20px;
+                    }
+                    .heading {
+                        padding: 14px 12px 12px 12px;
+                    }
+                    .heading h5 {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .headingunderline {
+                        width: 10%;
+                        text-align: left;
+                        margin: 0;
+                        background-color: #f0233e;
+                        height: 1px;
+                    }
+                    header {
+                        background: #e3324a;
+                    }
+                }
+                /* Medium devices (landscape tablets, 550px to 850) */
+                
+                @media only screen and (min-width: 550px) and (max-width: 991px) {
+                    .navbar-brand img {
+                        height: 3rem;
+                        width: auto;
+                    }
+                    .togglerimg {
+                        height: 2.2rem;
+                        border: none;
+                    }
+                    .navbar {
+                        padding-top: 8px;
+                    }
+                    header {
+                        background: #e3324a;
+                    }
+                    /* sidebar */
+                    .vego-sidebar {
+                        height: 32%;
+                    }
+                    .vego-bar-block {
+                        min-width: 80%;
+                    }
+                    .indexcarousel {
+                        display: none;
+                    }
+                    /* sidebar vego tablet */
+                    .userprofile {
+                        height: 10rem;
+                        background: #209586;
+                    }
+                    .sidebarlink {
+                        display: flex;
+                        width: 100%;
+                        padding: 0.7rem;
+                        border-bottom: 1px solid lightgray;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                    .sblinkicon img {
+                        height: 1.3rem;
+                    }
+                    .sblinknav img {
+                        height: 0.5rem;
+                    }
+                    .sblinkicon {
+                        width: 10%;
+                    }
+                    .sblinktxt {
+                        width: 80%;
+                        padding-left: 0.5rem;
+                    }
+                    .sblinktxt p {
+                        font-size: 17px;
+                        margin-top: 3px;
+                        margin-bottom: 0;
+                        color: black;
+                    }
+                    .sblinktxt p:hover {
+                        font-weight: 550;
+                        color: #f0233e;
+                    }
+                    .cutsidebar img {
+                        height: 1.2rem;
+                        float: right;
+                        margin: 20px;
+                    }
+                }
+                /* Large devices (Desktop, 850px and up) */
+                
+                @media only screen and (min-width: 992px) {
+                    body {
+                        background-color: white;
+                    }
+                    .navbar-brand {
+                        margin: 0px 0px 0px 50px;
+                    }
+                    .navbar-brand img {
+                        height: 3rem;
+                        width: auto;
+                    }
+                    .dropdown-menu {
+                        display: none;
+                        font-size: 15px;
+                    }
+                    .dropdown-menu a {
+                        font-size: 14px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                    .dropdown-menu a:hover {
+                        background-color: #e3324a;
+                        color: white;
+                    }
+                    .dropdown:hover .dropdown-menu {
+                        display: block;
+                    }
+                    .navLinks {
+                        margin: 0px 120px 0px 0px;
+                    }
+                    .navbar {
+                        padding-top: 8px;
+                    }
+                    header {
+                        background: #209586;
+                    }
+                    .nav-link {
+                        color: white;
+                        font-size: 15px;
+                    }
+                    .nav-link:hover {
+                        color: lightgrey;
+                    }
+                }
