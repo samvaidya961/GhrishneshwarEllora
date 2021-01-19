@@ -62,32 +62,16 @@
                 
                 .vego-animate-left {
                     position: relative;
-                    animation: animateleft 0.4s
+                    animation: animatetop 0.4s
                 }
                 
-                .vego-animate-bottom {
-                    position: relative;
-                    animation: animatebottom 0.4s
-                }
-                
-                @keyframes animatebottom {
+                @keyframes animatetop {
                     from {
-                        bottom: -300px;
+                        top: -300px;
                         opacity: 0
                     }
                     to {
-                        bottom: 0;
-                        opacity: 1
-                    }
-                }
-                
-                @keyframes animateleft {
-                    from {
-                        left: -300px;
-                        opacity: 0
-                    }
-                    to {
-                        left: 0;
+                        top: 0;
                         opacity: 1
                     }
                 }
@@ -104,7 +88,7 @@
                 }
                 
                 .vego-bar-block {
-                    width: 100%;
+                    width: 90%;
                     text-align: left;
                     padding: 8px 16px;
                     width: 100%;
@@ -119,16 +103,18 @@
                 
                 #mySidebar {
                     position: fixed;
-                    left: 0;
-                    height: 100%;
+                    right: 5%;
                     z-index: 1000;
                     padding: 20px;
                     overflow-x: hidden;
                     overflow-y: auto;
                     padding-right: 0;
                     padding-left: 0;
-                    width: 100%;
+                    width: 90%;
                     padding: 0;
+                    top: 0.5rem;
+                    border-radius: 10px;
+                    height: auto;
                 }
                 
                 .defaultcard {
@@ -144,12 +130,12 @@
                 
                 @media only screen and (max-width: 550px) {
                     .navbar-brand img {
-                        height: 2.2rem;
+                        height: 2.4rem;
                         width: auto;
                         margin: 0px 0px 0px 0px;
                     }
                     .togglerimg {
-                        height: 1.7rem;
+                        height: 1.6rem;
                         border: none;
                     }
                     /* sidebar */
@@ -157,11 +143,10 @@
                         height: 35%;
                     }
                     .vego-bar-block {
-                        min-width: 85%;
+                        min-width: 90%;
                     }
                     .userprofile {
-                        height: 10rem;
-                        background: #209586;
+                        height: 1rem;
                     }
                     .sidebarlink {
                         display: flex;
@@ -199,7 +184,7 @@
                         transition: 0s;
                     }
                     .cutsidebar img {
-                        height: 1.2rem;
+                        height: 0.8rem;
                         float: right;
                         margin: 20px;
                     }
@@ -230,29 +215,27 @@
                         width: auto;
                     }
                     .togglerimg {
-                        height: 2.2rem;
+                        height: 2rem;
                         border: none;
                     }
                     .navbar {
                         padding-top: 8px;
                     }
                     header {
-                        background: #e3324a;
+                        background: white;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
                     }
                     /* sidebar */
                     .vego-sidebar {
                         height: 32%;
                     }
                     .vego-bar-block {
-                        min-width: 80%;
-                    }
-                    .indexcarousel {
-                        display: none;
+                        min-width: 90%;
                     }
                     /* sidebar vego tablet */
                     .userprofile {
-                        height: 10rem;
-                        background: #209586;
+                        height: 1rem;
+                        background: white;
                     }
                     .sidebarlink {
                         display: flex;
@@ -286,9 +269,10 @@
                         color: #f0233e;
                     }
                     .cutsidebar img {
-                        height: 1.2rem;
+                        height: 1rem;
                         float: right;
                         margin: 20px;
+                        margin-right: 30px;
                     }
                 }
                 /* Large devices (Desktop, 850px and up) */
@@ -304,22 +288,6 @@
                         height: 3rem;
                         width: auto;
                     }
-                    .dropdown-menu {
-                        display: none;
-                        font-size: 15px;
-                    }
-                    .dropdown-menu a {
-                        font-size: 14px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                    }
-                    .dropdown-menu a:hover {
-                        background-color: #e3324a;
-                        color: white;
-                    }
-                    .dropdown:hover .dropdown-menu {
-                        display: block;
-                    }
                     .navLinks {
                         margin: 0px 120px 0px 0px;
                     }
@@ -327,10 +295,11 @@
                         padding-top: 8px;
                     }
                     header {
-                        background: #209586;
+                        background: white;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
                     }
                     .nav-link {
-                        color: white;
+                        color: rgb(43, 43, 43);
                         font-size: 15px;
                     }
                     .nav-link:hover {
