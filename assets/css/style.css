@@ -444,6 +444,9 @@
                         .clicktomore {
                             text-align: center;
                             background-color: rgb(51, 51, 51);
+                            padding-top: 2px;
+                            padding-bottom: 3px;
+                            border-radius: 3px;
                         }
                         .clicktomore a {
                             font-size: 12px;
