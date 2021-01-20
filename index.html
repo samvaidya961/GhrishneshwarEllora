@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <meta name="description" content="Online Vehicle Repair Service">
     <meta name="keywords" content="ghrishneshwar,ellora,verul,temple,caves,mandir">
     <meta name="author" content="Samruddhi Vaidya">
@@ -54,7 +56,17 @@
 
                 </div>
             </a>
+            <a href="#vipguests">
+                <div class="sidebarlink ">
+                    <div class="sblinkicon ">
+                        <img src="assets/images/vip.svg " alt=" ">
+                    </div>
+                    <div class="sblinktxt ">
+                        <p>Glimpse Of VIP Guests</p>
+                    </div>
 
+                </div>
+            </a>
             <a href="#photogallery ">
                 <div class="sidebarlink ">
                     <div class="sblinkicon ">
@@ -124,14 +136,18 @@
                         <a class="nav-link " href="#home ">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#photogallery ">Photo Gallery</a>
+                        <a class="nav-link " href="#vipguests">VIP Guests</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#contactus ">Contact us</a>
+                        <a class="nav-link " href="#photogallery ">Photo Gallery</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="#nearbyplaces ">Nearby Places</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#contactus ">Contact us</a>
+                    </li>
+
                     <li class="nav-item ">
                         <a class="nav-link " href="#seemaps ">Go to Map</a>
                     </li>
@@ -169,10 +185,10 @@
     </div>
 
 
-    <div class="" id="vipguests">
+    <div id="vipguests">
         <div class="defaultcard">
             <div class="heading">
-                <h5>VIP Guests Visited</h5>
+                <h5>Glimpse Of VIP Guests Visited</h5>
                 <div class="d-flex">
                     <div class="headingunderline"></div>
                 </div>
@@ -521,8 +537,18 @@
                     <img src="assets/images/pic12.jpg" alt="Image of caves12" onclick="myFunction1(this);" data-toggle="modal" data-target="#exampleModalCenter1">
                 </div>
             </div>
+
+
+            <div class="seemore">
+                <a href="nearbyplaces.html">
+                    <p>Click To View More Places >></p>
+                </a>
+            </div>
         </div>
     </div>
+
+
+
 
     <div id="contactus">
         <div class="defaultcard">
@@ -571,9 +597,47 @@
                 <div class="headingunderline"></div>
             </div>
             <div class="map">
-                <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=ghrishneshwar%20temple,%20ellora+(ellora)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 
-                </div>
+                <div id="mapid" style="width: 100%; height: 400px;"></div>
+                <script>
+                    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+                    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 18,
+
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    }).addTo(mymap);
+
+                    L.marker([51.5, -0.09]).addTo(mymap)
+                        .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+                    L.circle([51.508, -0.11], 500, {
+                        color: 'red',
+                        fillColor: '#f03',
+                        fillOpacity: 0.5
+                    }).addTo(mymap).bindPopup("I am a circle.");
+
+                    L.polygon([
+                        [51.509, -0.08],
+                        [51.503, -0.06],
+                        [51.51, -0.047]
+                    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+                    var popup = L.popup();
+
+                    function onMapClick(e) {
+                        popup
+                            .setLatLng(e.latlng)
+                            .setContent("You clicked the map at " + e.latlng.toString())
+                            .openOn(mymap);
+                    }
+
+                    mymap.on('click', onMapClick);
+                </script>
+
             </div>
         </div>
     </div>

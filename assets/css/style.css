@@ -93,6 +93,7 @@
                         cursor: pointer;
                         padding: 15px;
                         border-radius: 4px;
+                        z-index: 1000;
                     }
                     
                     #myBtn img {
@@ -142,7 +143,7 @@
                         padding: 0;
                         top: 1rem;
                         border-radius: 10px;
-                        height: 21rem;
+                        height: 24.7rem;
                     }
                     
                     .defaultcard {
@@ -206,7 +207,7 @@
                         }
                         .sblinktxt p:hover {
                             font-weight: 550;
-                            color: #f0233e;
+                            color: #fd8b01;
                         }
                         .sidebarlink:hover .sblinknav img {
                             transform: rotate(90deg);
@@ -387,6 +388,72 @@
                             height: 2rem;
                             width: 2rem;
                             z-index: 900;
+                        }
+                        .seemore p {
+                            font-size: 12px;
+                            margin-bottom: 0px;
+                            text-align: end;
+                            margin-right: 15px;
+                            margin-top: 10px;
+                            text-decoration: underline rgb(104, 104, 104);
+                        }
+                        .placecard-c {
+                            background-color: #fff;
+                            padding: 0.7rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .placecard {
+                            display: flex;
+                            padding-bottom: 0.7rem;
+                        }
+                        .placeimg img {
+                            height: 6rem;
+                            width: 10rem;
+                            border-radius: 5px;
+                        }
+                        .placeinfo p,
+                        span,
+                        a {
+                            font-size: 14px;
+                            margin-bottom: 0px;
+                        }
+                        .placeinfo {
+                            margin-left: 10px;
+                        }
+                        .placename p {
+                            font-weight: 600;
+                            margin-bottom: 0.5rem;
+                        }
+                        .placetime span {
+                            font-size: 12px;
+                        }
+                        .linkmap {
+                            margin-top: 0.5rem;
+                        }
+                        .linkmap img {
+                            height: 1.1rem;
+                            margin-top: -6px;
+                        }
+                        .linkmap a {
+                            font-size: 13px;
+                            color: grey;
+                        }
+                        .linkmap a:hover {
+                            text-decoration: underline grey;
+                        }
+                        .clicktomore {
+                            text-align: center;
+                            background-color: #fd8b01;
+                        }
+                        .clicktomore a {
+                            font-size: 12px;
+                            color: white;
+                        }
+                        .clicktomore a:hover {
+                            text-decoration: underline white;
+                        }
+                        .clicktomore img {
+                            height: 0.6rem;
                         }
                     }
                     /* Medium devices (landscape tablets, 550px to 850) */
