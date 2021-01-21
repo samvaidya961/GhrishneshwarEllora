@@ -92,7 +92,7 @@
             </a>
 
 
-            <a href="#nearbyplaces" onclick="sidebar_close()">
+            <a href="nearbyplaces.html" onclick="sidebar_close()">
                 <div class="sidebarlink ">
                     <div class="sblinkicon ">
                         <img src="assets/images/nearby.svg" alt=" ">
@@ -142,7 +142,7 @@
                         <a class="nav-link " href="#photogallery ">Photo Gallery</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#nearbyplaces ">Nearby Places</a>
+                        <a class="nav-link " href="nearbyplaces.html">Nearby Places</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="#contactus ">Contact us</a>
@@ -390,11 +390,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <a class="carousel-control-prev prevnext" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <a class="carousel-control-next prevnext" href="#carouselExampleCaptions" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -600,32 +600,32 @@
 
                 <div id="mapid" style="width: 100%; height: 400px;"></div>
                 <script>
-                    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+                    var mymap = L.map('mapid').setView([20.02515891250244, 75.16945059680434], 13);
 
                     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
                         maxZoom: 18,
-
                         id: 'mapbox/streets-v11',
                         tileSize: 512,
                         zoomOffset: -1
                     }).addTo(mymap);
 
-                    L.marker([51.5, -0.09]).addTo(mymap)
-                        .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+                    L.marker([20.02603874977598, 75.17795458146296]).addTo(mymap).bindPopup("<b>Ellora Caves !</b>").openPopup();
 
-                    L.circle([51.508, -0.11], 500, {
+                    L.marker([20.026607528510702, 75.1764983833105]).addTo(mymap).bindPopup("<b>Laksha Vinayak Ganpati !</b>").openPopup();
+
+                    L.marker([20.010713426616395, 75.1960301188048]).addTo(mymap).bindPopup("<b>Bhadra Maruti !</b>").openPopup();
+
+                    L.marker([20.095959670927794, 75.1804531698981]).addTo(mymap).bindPopup("<b>Mhaismal Hillstation !</b>").openPopup();
+
+                    L.marker([20.035708118483882, 75.17134552622235]).addTo(mymap).bindPopup("<b>Taka Swami Ashram !</b>").openPopup();
+
+                    L.marker([20.02515891250244, 75.16945059680434]).addTo(mymap).bindPopup("<b>Ghrishneshwar Temple !</b>").openPopup();
+
+                    L.circle([20.02515891250244, 75.16945059680434], 300, {
                         color: 'red',
-                        fillColor: '#f03',
+                        fillColor: 'red',
                         fillOpacity: 0.5
-                    }).addTo(mymap).bindPopup("I am a circle.");
-
-                    L.polygon([
-                        [51.509, -0.08],
-                        [51.503, -0.06],
-                        [51.51, -0.047]
-                    ]).addTo(mymap).bindPopup("I am a polygon.");
-
-
+                    }).addTo(mymap).bindPopup("<b>Ghrishneshwar Temple ! !</b>.");
                     var popup = L.popup();
 
                     function onMapClick(e) {
@@ -637,7 +637,6 @@
 
                     mymap.on('click', onMapClick);
                 </script>
-
             </div>
         </div>
     </div>
