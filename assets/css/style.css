@@ -143,7 +143,7 @@
                         padding: 0;
                         top: 1rem;
                         border-radius: 10px;
-                        height: 24.7rem;
+                        height: 28.28rem;
                     }
                     
                     .defaultcard {
@@ -322,6 +322,18 @@
                         }
                         .info1 p {
                             font-weight: 600;
+                            margin-bottom: 3px;
+                        }
+                        .infodes p {
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: rgb(46, 46, 46);
+                            margin-bottom: 2px;
+                        }
+                        .infodes span {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: rgb(87, 87, 87);
                         }
                         .info2 {
                             display: flex;
@@ -404,6 +416,9 @@
                             width: 10rem;
                             border-radius: 5px;
                         }
+                        .hotelimg img {
+                            height: 7rem;
+                        }
                         .placeinfo p,
                         span,
                         a {
@@ -419,6 +434,40 @@
                         }
                         .placetime span {
                             font-size: 12px;
+                        }
+                        .ratings {
+                            display: flex;
+                            margin-bottom: 0.5rem;
+                        }
+                        .ratings img {
+                            height: 0.7rem;
+                            margin-right: 4px;
+                        }
+                        .ratings p {
+                            font-size: 13px;
+                            margin-top: -3px;
+                            margin-left: 3px;
+                        }
+                        .phoneno span {
+                            font-size: 13px;
+                        }
+                        .phoneno {
+                            display: flex;
+                        }
+                        .phoneno img {
+                            height: 0.7rem;
+                            margin-top: 6px;
+                            margin-right: 3px;
+                        }
+                        .addresshotel {
+                            border-top: 1px solid rgb(230, 230, 230);
+                            display: flex;
+                            padding-top: 5px;
+                        }
+                        .addresshotel img {
+                            height: 0.7rem;
+                            margin-right: 3px;
+                            margin-top: 4px;
                         }
                         .linkmap {
                             margin-top: 0.5rem;
