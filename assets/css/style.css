@@ -451,6 +451,10 @@
                         .phoneno span {
                             font-size: 13px;
                         }
+                        .phoneno a {
+                            color: rgb(0, 110, 255);
+                            text-decoration: underline rgb(0, 110, 255);
+                        }
                         .phoneno {
                             display: flex;
                         }
