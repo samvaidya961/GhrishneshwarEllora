@@ -552,23 +552,15 @@
                         .navbar {
                             padding-top: 8px;
                         }
-                        header {
-                            background: white;
-                            box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
-                            position: sticky;
-                            top: 0;
-                        }
                         /* sidebar */
                         .vego-sidebar {
-                            height: 32%;
+                            height: 35%;
                         }
                         .vego-bar-block {
                             min-width: 90%;
                         }
-                        /* sidebar vego tablet */
                         .userprofile {
                             height: 1rem;
-                            background: white;
                         }
                         .sidebarlink {
                             display: flex;
@@ -592,20 +584,342 @@
                             padding-left: 0.5rem;
                         }
                         .sblinktxt p {
-                            font-size: 17px;
+                            font-size: 14px;
                             margin-top: 3px;
                             margin-bottom: 0;
                             color: black;
                         }
                         .sblinktxt p:hover {
                             font-weight: 550;
-                            color: #f0233e;
+                            color: #fd8b01;
+                        }
+                        .sidebarlink:hover .sblinknav img {
+                            transform: rotate(90deg);
+                            transition: 0s;
                         }
                         .cutsidebar img {
-                            height: 1rem;
+                            height: 0.8rem;
                             float: right;
                             margin: 20px;
-                            margin-right: 30px;
+                        }
+                        .heading {
+                            padding: 14px 12px 12px 12px;
+                        }
+                        .heading h5 {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        .headingunderline {
+                            width: 10%;
+                            text-align: left;
+                            margin: 0;
+                            background-color: #fd8b01;
+                            height: 2px;
+                        }
+                        header {
+                            background: white;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
+                            background-color: rgb(43, 43, 43);
+                            position: sticky;
+                            top: 0;
+                            z-index: 1000;
+                        }
+                        .carousel {
+                            z-index: 800;
+                        }
+                        /* main site content */
+                        .mainhome {
+                            background-color: rgb(43, 43, 43);
+                            margin: 0px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            border-radius: 0px;
+                            width: 100%;
+                            padding: 1rem;
+                        }
+                        .maintxt {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .maintxt h2 {
+                            color: rgb(167, 167, 167);
+                            font-weight: 650;
+                            font-size: 2rem;
+                            margin-bottom: 3rem;
+                            padding-top: 1rem;
+                        }
+                        .maintxt h4 {
+                            color: white;
+                            font-size: 1.2rem;
+                            text-transform: uppercase;
+                        }
+                        .mainbtn {
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 2rem;
+                        }
+                        .mainbtn button {
+                            background-color: #fd8b01;
+                            color: white;
+                            font-size: 14px;
+                        }
+                        .imges1 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            justify-content: center;
+                            padding: 1px;
+                        }
+                        .img-item {
+                            width: 31%;
+                            margin: 0.8%;
+                        }
+                        .img-item img {
+                            width: 100%;
+                            height: 4rem;
+                            border-radius: 5px;
+                        }
+                        .contact-cont {
+                            width: 80%;
+                            margin-left: 10%;
+                            border: 1px solid rgb(247, 247, 247);
+                            text-align: center;
+                            box-shadow: 1px 1px 2px rgb(240, 240, 240);
+                            border-radius: 5px;
+                            margin-top: 3rem;
+                            background: rgb(255, 255, 255);
+                        }
+                        .profile-pic {
+                            margin-top: -3.2rem;
+                            margin-bottom: 1rem;
+                        }
+                        .profile-pic img {
+                            height: 7rem;
+                            width: 7rem;
+                            border-radius: 50%;
+                            border: 6px solid white;
+                        }
+                        .contact-cont p {
+                            font-size: 14px;
+                            color: rgb(51, 51, 51);
+                        }
+                        .info1 p {
+                            font-weight: 600;
+                            margin-bottom: 3px;
+                        }
+                        .infodes p {
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: rgb(46, 46, 46);
+                            margin-bottom: 2px;
+                        }
+                        .infodes span {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: rgb(87, 87, 87);
+                        }
+                        .info2 {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .info2 img {
+                            height: 0.8rem;
+                            margin-top: 5px;
+                            margin-right: 5px;
+                        }
+                        .contactbtn button {
+                            background-color: #fd8b01;
+                            color: white;
+                            font-size: 14px;
+                            width: 100%;
+                        }
+                        /* The expanding image container */
+                        .container {
+                            position: relative;
+                            display: none;
+                        }
+                        .modal-content {
+                            background-color: rgb(0, 0, 0);
+                        }
+                        .modal-header {
+                            border-bottom: none;
+                        }
+                        .close {
+                            color: white;
+                        }
+                        #imgtext {
+                            color: white;
+                            text-align: center;
+                            font-size: 14px;
+                            margin-top: 0.5rem;
+                        }
+                        #imgtext1 {
+                            color: white;
+                            text-align: center;
+                            font-size: 14px;
+                            margin-top: 0.5rem;
+                        }
+                        .map {
+                            margin-top: 1rem;
+                        }
+                        .carousel-item img {
+                            height: 15rem;
+                        }
+                        .carousel-caption p {
+                            color: white;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                        .prevnext {
+                            background-color: rgb(51, 51, 51);
+                            margin-top: 30rem;
+                            height: 2rem;
+                            width: 2rem;
+                            z-index: 900;
+                        }
+                        .seemore p {
+                            font-size: 12px;
+                            margin-bottom: 0px;
+                            text-align: end;
+                            margin-right: 15px;
+                            margin-top: 10px;
+                            text-decoration: underline rgb(104, 104, 104);
+                        }
+                        .placecard-c {
+                            background-color: #fff;
+                            padding: 0.7rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .placecard {
+                            display: flex;
+                            padding-bottom: 0.7rem;
+                        }
+                        .placeimg img {
+                            height: 6rem;
+                            width: 10rem;
+                            border-radius: 5px;
+                        }
+                        .hotelimg img {
+                            height: 7rem;
+                        }
+                        .placeinfo p,
+                        span,
+                        a {
+                            font-size: 14px;
+                            margin-bottom: 0px;
+                        }
+                        .placeinfo {
+                            margin-left: 10px;
+                        }
+                        .placename p {
+                            font-weight: 600;
+                            margin-bottom: 0.5rem;
+                        }
+                        .placetime span {
+                            font-size: 12px;
+                        }
+                        .ratings {
+                            display: flex;
+                            margin-bottom: 0.5rem;
+                        }
+                        .ratings img {
+                            height: 0.7rem;
+                            margin-right: 4px;
+                        }
+                        .ratings p {
+                            font-size: 13px;
+                            margin-top: -3px;
+                            margin-left: 3px;
+                        }
+                        .phoneno span {
+                            font-size: 13px;
+                        }
+                        .phoneno a {
+                            color: rgb(0, 110, 255);
+                            text-decoration: underline rgb(0, 110, 255);
+                        }
+                        .phoneno {
+                            display: flex;
+                        }
+                        .phoneno img {
+                            height: 0.7rem;
+                            margin-top: 6px;
+                            margin-right: 3px;
+                        }
+                        .addresshotel {
+                            border-top: 1px solid rgb(230, 230, 230);
+                            display: flex;
+                            padding-top: 5px;
+                        }
+                        .addresshotel img {
+                            height: 0.7rem;
+                            margin-right: 3px;
+                            margin-top: 4px;
+                        }
+                        .linkmap {
+                            margin-top: 0.5rem;
+                        }
+                        .linkmap img {
+                            height: 1.1rem;
+                            margin-top: -6px;
+                        }
+                        .linkmap a {
+                            font-size: 13px;
+                            color: grey;
+                        }
+                        .linkmap a:hover {
+                            text-decoration: underline grey;
+                        }
+                        .clicktomore {
+                            text-align: center;
+                            background-color: rgb(51, 51, 51);
+                            padding-top: 2px;
+                            padding-bottom: 3px;
+                            border-radius: 3px;
+                        }
+                        .clicktomore a {
+                            font-size: 12px;
+                            color: white;
+                        }
+                        .clicktomore a:hover {
+                            text-decoration: underline white;
+                        }
+                        .clicktomore img {
+                            height: 0.6rem;
+                        }
+                        #headt {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                        tr {
+                            font-size: 14px;
+                        }
+                        .info-place {
+                            padding: 1rem;
+                        }
+                        .info-place li {
+                            font-size: 14px;
+                            margin-bottom: 0.7rem;
+                        }
+                        .timetableimg img {
+                            width: 100%;
+                            margin-top: 1rem;
+                        }
+                        .note {
+                            border: 1px solid rgb(231, 231, 231);
+                            box-shadow: 1px 1px 3px rgb(235, 235, 235);
+                            width: 96%;
+                            margin-left: 2%;
+                            border-radius: 5px;
+                        }
+                        .note p {
+                            font-size: 14px;
+                            font-weight: 600;
+                            margin-bottom: 0px;
+                            padding: 0.5rem;
+                            text-align: center;
+                            color: darkgreen;
                         }
                     }
                     /* Large devices (Desktop, 850px and up) */
@@ -634,10 +948,333 @@
                             top: 0;
                         }
                         .nav-link {
-                            color: rgb(43, 43, 43);
+                            color: rgb(255, 255, 255);
                             font-size: 15px;
                         }
                         .nav-link:hover {
                             color: lightgrey;
+                        }
+                        .heading {
+                            padding: 14px 12px 12px 12px;
+                        }
+                        .heading h5 {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .headingunderline {
+                            width: 10%;
+                            text-align: left;
+                            margin: 0;
+                            background-color: #fd8b01;
+                            height: 2px;
+                        }
+                        header {
+                            background: white;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, .105882);
+                            background-color: rgb(43, 43, 43);
+                            position: sticky;
+                            top: 0;
+                            z-index: 1000;
+                        }
+                        .carousel {
+                            z-index: 800;
+                        }
+                        /* main site content */
+                        .mainhome {
+                            background-color: rgb(43, 43, 43);
+                            margin: 0px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            border-radius: 0px;
+                            width: 100%;
+                            padding: 1rem;
+                        }
+                        .maintxt {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .maintxt h2 {
+                            color: rgb(167, 167, 167);
+                            font-weight: 650;
+                            font-size: 3rem;
+                            margin-bottom: 3rem;
+                            padding-top: 1rem;
+                        }
+                        .maintxt h4 {
+                            color: white;
+                            font-size: 2rem;
+                            text-transform: uppercase;
+                        }
+                        .mainbtn {
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 2rem;
+                        }
+                        .mainbtn button {
+                            background-color: #fd8b01;
+                            color: white;
+                            font-size: 14px;
+                        }
+                        .imges1 {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            justify-content: center;
+                            padding: 1px;
+                        }
+                        .img-item {
+                            width: 31%;
+                            margin: 0.8%;
+                        }
+                        .img-item img {
+                            width: 100%;
+                            height: 10rem;
+                            border-radius: 5px;
+                        }
+                        .contact-cont {
+                            width: 40%;
+                            margin-left: 30%;
+                            border: 1px solid rgb(247, 247, 247);
+                            text-align: center;
+                            box-shadow: 1px 1px 2px rgb(240, 240, 240);
+                            border-radius: 5px;
+                            margin-top: 3rem;
+                            background: rgb(255, 255, 255);
+                        }
+                        .profile-pic {
+                            margin-top: -3.2rem;
+                            margin-bottom: 1rem;
+                        }
+                        .profile-pic img {
+                            height: 7rem;
+                            width: 7rem;
+                            border-radius: 50%;
+                            border: 6px solid white;
+                        }
+                        .contact-cont p {
+                            font-size: 14px;
+                            color: rgb(51, 51, 51);
+                        }
+                        .info1 p {
+                            font-weight: 600;
+                            margin-bottom: 3px;
+                        }
+                        .infodes p {
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: rgb(46, 46, 46);
+                            margin-bottom: 2px;
+                        }
+                        .infodes span {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: rgb(87, 87, 87);
+                        }
+                        .info2 {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .info2 img {
+                            height: 0.8rem;
+                            margin-top: 5px;
+                            margin-right: 5px;
+                        }
+                        .contactbtn button {
+                            background-color: #fd8b01;
+                            color: white;
+                            font-size: 14px;
+                            width: 100%
+                        }
+                        /* The expanding image container */
+                        .container {
+                            position: relative;
+                            display: none;
+                        }
+                        .modal-content {
+                            background-color: rgb(0, 0, 0);
+                        }
+                        .modal-header {
+                            border-bottom: none;
+                        }
+                        .close {
+                            color: white;
+                        }
+                        #imgtext {
+                            color: white;
+                            text-align: center;
+                            font-size: 14px;
+                            margin-top: 0.5rem;
+                        }
+                        #imgtext1 {
+                            color: white;
+                            text-align: center;
+                            font-size: 14px;
+                            margin-top: 0.5rem;
+                        }
+                        .map {
+                            margin-top: 1rem;
+                        }
+                        .carousel-item img {
+                            height: 30rem;
+                        }
+                        .carousel-caption p {
+                            color: white;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                        .prevnext {
+                            background-color: rgb(51, 51, 51);
+                            margin-top: 30rem;
+                            height: 2rem;
+                            width: 2rem;
+                            z-index: 900;
+                        }
+                        .seemore p {
+                            font-size: 12px;
+                            margin-bottom: 0px;
+                            text-align: end;
+                            margin-right: 15px;
+                            margin-top: 10px;
+                            text-decoration: underline rgb(104, 104, 104);
+                        }
+                        .placecard-c {
+                            background-color: #fff;
+                            padding: 0.7rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .placecard {
+                            display: flex;
+                            padding-bottom: 0.7rem;
+                        }
+                        .placeimg img {
+                            height: 6rem;
+                            width: 10rem;
+                            border-radius: 5px;
+                        }
+                        .hotelimg img {
+                            height: 7rem;
+                        }
+                        .placeinfo p,
+                        span,
+                        a {
+                            font-size: 14px;
+                            margin-bottom: 0px;
+                        }
+                        .placeinfo {
+                            margin-left: 10px;
+                        }
+                        .placename p {
+                            font-weight: 600;
+                            margin-bottom: 0.5rem;
+                        }
+                        .placetime span {
+                            font-size: 12px;
+                        }
+                        .ratings {
+                            display: flex;
+                            margin-bottom: 0.5rem;
+                        }
+                        .ratings img {
+                            height: 0.7rem;
+                            margin-right: 4px;
+                        }
+                        .ratings p {
+                            font-size: 13px;
+                            margin-top: -3px;
+                            margin-left: 3px;
+                        }
+                        .phoneno span {
+                            font-size: 13px;
+                        }
+                        .phoneno a {
+                            color: rgb(0, 110, 255);
+                            text-decoration: underline rgb(0, 110, 255);
+                        }
+                        .phoneno {
+                            display: flex;
+                        }
+                        .phoneno img {
+                            height: 0.7rem;
+                            margin-top: 6px;
+                            margin-right: 3px;
+                        }
+                        .addresshotel {
+                            border-top: 1px solid rgb(230, 230, 230);
+                            display: flex;
+                            padding-top: 5px;
+                        }
+                        .addresshotel img {
+                            height: 0.7rem;
+                            margin-right: 3px;
+                            margin-top: 4px;
+                        }
+                        .linkmap {
+                            margin-top: 0.5rem;
+                        }
+                        .linkmap img {
+                            height: 1.1rem;
+                            margin-top: -6px;
+                        }
+                        .linkmap a {
+                            font-size: 13px;
+                            color: grey;
+                        }
+                        .linkmap a:hover {
+                            text-decoration: underline grey;
+                        }
+                        .clicktomore {
+                            text-align: center;
+                            background-color: rgb(51, 51, 51);
+                            padding-top: 2px;
+                            padding-bottom: 3px;
+                            border-radius: 3px;
+                        }
+                        .clicktomore a {
+                            font-size: 12px;
+                            color: white;
+                        }
+                        .clicktomore a:hover {
+                            text-decoration: underline white;
+                        }
+                        .clicktomore img {
+                            height: 0.6rem;
+                        }
+                        #headt {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                        tr {
+                            font-size: 14px;
+                        }
+                        .info-place {
+                            padding: 1rem;
+                        }
+                        .info-place li {
+                            font-size: 14px;
+                            margin-bottom: 0.7rem;
+                        }
+                        .timetableimg img {
+                            width: 50%;
+                            margin-left: 25%;
+                            margin-top: 1rem;
+                        }
+                        .note {
+                            border: 1px solid rgb(231, 231, 231);
+                            box-shadow: 1px 1px 3px rgb(235, 235, 235);
+                            width: 96%;
+                            margin-left: 2%;
+                            border-radius: 5px;
+                        }
+                        .note p {
+                            font-size: 18px;
+                            font-weight: 600;
+                            margin-bottom: 0px;
+                            padding: 0.5rem;
+                            text-align: center;
+                            color: darkgreen;
+                        }
+                        .backbtn {
+                            display: none;
                         }
                     }
